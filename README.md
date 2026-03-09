@@ -8,12 +8,7 @@ Connecte Claude à tes données SEO. Analyse ton site, tes mots-clés, ton trafi
 
 Va sur [app.cuik.io/fr/settings](https://app.cuik.io/fr/settings) et copie ta clé API (elle commence par `sk_`).
 
-### 2. Configure Claude
-
-Choisis **l'une** des deux options selon ton utilisation :
-
-<details>
-<summary><strong>Option A — Claude Desktop</strong></summary>
+### 2. Ajoute à Claude Desktop
 
 Ouvre les paramètres de Claude Desktop → **Developer > Edit Config**, et ajoute :
 
@@ -33,10 +28,7 @@ Ouvre les paramètres de Claude Desktop → **Developer > Edit Config**, et ajou
 
 Redémarre Claude Desktop pour charger le MCP.
 
-</details>
-
-<details>
-<summary><strong>Option B — Claude Code (CLI)</strong></summary>
+### Ou : Ajoute à Claude Code (CLI)
 
 ```bash
 claude mcp add cuik -- npx -y github:Nemzytch/cuik-mcp
@@ -49,8 +41,6 @@ export CUIK_API_KEY="sk_ta_cle_ici"
 ```
 
 Redémarre Claude Code pour charger le MCP.
-
-</details>
 
 ---
 
