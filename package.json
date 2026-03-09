@@ -1,0 +1,27 @@
+{
+  "name": "cuik-mcp",
+  "version": "0.14.1",
+  "description": "MCP server for the Cuik SEO platform API",
+  "type": "module",
+  "bin": {
+    "cuik-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:prod": "tsc && npx javascript-obfuscator dist/index.js --output dist/index.js --compact true --string-array true --string-array-encoding base64 --self-defending false --rename-globals false --identifier-names-generator hexadecimal",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@toon-format/toon": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "javascript-obfuscator": "^5.3.0",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "license": "AGPL-3.0"
+}

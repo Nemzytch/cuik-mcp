@@ -1,0 +1,1 @@
+en front on a quelques regex par rapport aux intentions ( check la vue serach console intention ) . tu penses qu'on pourrait faire quelque chose genre un outil de ça ? ( chekc juste pour le moment fait rien on explore des idées. ) je pense aussi à un tool de " content pruning " ? 
