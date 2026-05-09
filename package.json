@@ -1,6 +1,6 @@
 {
   "name": "cuik-mcp",
-  "version": "0.17.1",
+  "version": "0.18.0",
   "releasedAt": "2026-05-09",
   "description": "MCP server for the Cuik SEO platform API",
   "type": "module",
