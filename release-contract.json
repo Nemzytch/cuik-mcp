@@ -1,0 +1,15 @@
+{
+  "version": "0.19.1",
+  "tools": 60,
+  "scenarios": 228,
+  "failures": 0,
+  "source_sha256": "a60da797ffc81116ac427bf327ea557d6fe00594fbc4d7bf0d973a1708f986c8",
+  "dist_sha256": "a3ce323b9bc08252fa46c41f8b8554182878dedff0301571093423e689006711",
+  "lock_sha256": "ff6b3622c733be39143588c551d95ec9c52a118bb691ed2de1d6b5c691a57d0f",
+  "backend_files": {
+    "app/routes/mcp_remote.py": "65df557a1da00409917e5c0886243c8d84a992324df938bb558d5ca0ac802727",
+    "app/routes/tool_dispatchers.py": "21b24083fc42ed555f1899aa9829645964b77e015206c37f40432b963c19162a",
+    "app/routes/mcp_contract.py": "aa788d63904df81dd3f87cebecc1a8c0e285936084adf7f1d44aaad16f719563",
+    "app/routes/tools_registry.py": "590961d99068713bcbf83cbd145b5c6d261687252705e59248079e99f8ee0d38"
+  }
+}

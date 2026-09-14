@@ -195,3 +195,17 @@ Combine tes données de crawl, Search Console et Analytics dans une seule requê
 ## Licence
 
 AGPL-3.0
+
+## Maintenance et publication
+
+Le paquet local et le connecteur HTTP sont qualifiés ensemble. Depuis le checkout privé contenant les sources MCP et `Cuik-Api-V3`, lancer :
+
+```bash
+Cuik-Api-V3/tools/qualify_mcp_release.sh
+```
+
+Cette commande construit l’exécutable obfusqué, génère le catalogue HTTP depuis ses schémas MCP réels, vérifie les anciens contrats et compare les deux transports sur une API simulée. Elle ne publie rien et ne redémarre aucun service. Les sources TypeScript restent exclues du paquet public.
+
+Le fichier `release-contract.json` lie le paquet testé aux empreintes du connecteur. `npm pack` refuse un exécutable ou un lockfile modifié depuis la qualification ; le contrôle GitHub vérifie aussi cette attestation. Une modification des sources impose de relancer la qualification. Le déploiement du connecteur et la publication du paquet GitHub sont deux opérations coordonnées ; les installations locales existantes continuent à fonctionner et doivent être mises à jour pour recevoir les nouveaux outils.
+
+Les réponses conservent leur texte historique. `structuredContent` fournit également la réponse complète du backend sur les deux transports, et `isError` indique les échecs d’exécution.

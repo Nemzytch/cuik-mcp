@@ -1,7 +1,7 @@
 {
   "name": "cuik-mcp",
-  "version": "0.19.0",
-  "releasedAt": "2026-05-09",
+  "version": "0.19.1",
+  "releasedAt": "2026-09-14",
   "description": "MCP server for the Cuik SEO platform API",
   "type": "module",
   "bin": {
@@ -10,7 +10,9 @@
   "scripts": {
     "build": "tsc",
     "build:prod": "tsc && npx javascript-obfuscator dist/index.js --output dist/index.js --compact true --string-array true --string-array-encoding base64 --self-defending false --rename-globals false --identifier-names-generator hexadecimal",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "prepack": "node scripts/check-release.mjs",
+    "check:release": "node scripts/check-release.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
@@ -22,7 +24,9 @@
     "typescript": "^5.0.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "release-contract.json",
+    "scripts/check-release.mjs"
   ],
   "license": "AGPL-3.0"
 }
